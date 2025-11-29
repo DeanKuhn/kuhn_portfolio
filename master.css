@@ -1,0 +1,88 @@
+
+
+:root {
+    --main-color: rgb(246, 253, 216);
+    --background-color: rgb(163, 101, 165);
+    --background-color2: rgb(137, 51, 139);
+    --link-color: rgb(184, 176, 176);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header {
+    color: var(--main-color);
+    background: linear-gradient(45deg, var(--background-color), var(--background-color2));
+    border-radius: 10px 5px;
+    text-align: left;
+    padding: 5px;
+    margin: 2px;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+#plug {
+    color: black;
+    text-decoration: underline;
+}
+
+#contact {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+}
+
+nav > div {
+    flex-basis: 100%;
+    padding: 10px;
+    margin: 2px;
+    background: linear-gradient(45deg, var(--background-color), var(--background-color2));
+    border-radius: 5px 2px;
+    text-align: left;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--background-color2);
+    width: 100%;
+}
+
+/* resume */
+#skills {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+table {
+    background: linear-gradient(45deg, rgb(218, 105, 105), rgb(129, 40, 40));
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+caption {
+    color: white;
+    background: linear-gradient(45deg, rgb(56, 22, 22), rgb(163, 25, 25));
+    border: 1px solid black;
+    padding: 8px;
+}
+
+footer {
+    color: var(--main-color);
+    background: linear-gradient(45deg, var(--background-color), var(--background-color2));
+    border-radius: 10px 5px;
+    text-align: left;
+    padding: 5px;
+    margin: 2px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="master.css">
+        <title>Cover Letter</title>
+    </head>
+
+
+
+    <body>
+        <header>
+            <h1>Cover Letter
+        </header>
+        <nav>
+            <div>
+                <a href="resume.html">Resume</a>
+            </div>
+            <div>
+                <a href="coverletter.html">Cover Letter</a>
+            </div>
+            <div>
+                <a href="careergoals.html">Career Goals</a>
+            </div>
+        </nav>
+        
+        <section>
+            <div>
+                <p><strong>Dean Kuhn</strong><br>
+                <em>Sussex, WI, USA</em><br>
+                dakuhn1138@gmail.com<br>
+                (262) 894-9363<br>
+                <a id="plug" href="https://www.linkedin.com/in/dean-kuhn-565249380/">LinkedIn</a> | 
+                <a id="plug" href="https://github.com/DeanKuhn">GitHub</a>
+                </p>
+
+                <p>
+                    <span id="dateTop"></span>
+                </p>
+            </div>
+                <script>
+                    const today = new Date();
+                    document.getElementById("dateTop").textContent = today.toLocaleDateString();
+                </script>
+               
+        </section>
+
+        <footer>
+            <div>
+                <a href="bonus.html">&copy Dean Kuhn 2025 
+                    <span style="text-decoration: underline;">(don't click...)</span></a><br>
+                <span id="dateBottom"></span>
+            </div>
+
+            <script>
+                const today = new Date();
+                document.getElementById("dateBottom").textContent = today.toLocaleDateString();
+            </script>
+        </footer>
+
+    </body>
+
+</html>

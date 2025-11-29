@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="master.css">
+        <title>Resume</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Resume
+        </header>
+
+        <nav>
+            <div>
+                <a href="resume.html">Resume</a>
+            </div>
+            <div>
+                <a href="coverletter.html">Cover Letter</a>
+            </div>
+            <div>
+                <a href="careergoals.html">Career Goals</a>
+            </div>
+        </nav>
+        
+        <section>
+            <div>
+                <h4>CONTACT INFO</h4>
+                <hr>
+                <div id="contact">
+                <span>(262) 894-9363</span> | 
+                <span>dakuhn1138@gmail.com</span> | 
+                <span>Sussex, WI, USA</span> | 
+                <span>
+                    <a id="plug" href="https://www.linkedin.com/in/dean-kuhn-565249380/">LinkedIn</a>
+                </span> | 
+                <span>
+                    <a id="plug" href="https://github.com/DeanKuhn">GitHub</a>
+                </span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>PROFESSIONAL SUMMARY</h3>
+                <hr>
+                <p>
+                    C.S. Student pursuing an accelerated B.S.—M.S. at WGU | Transitioning into tech with a focus on <strong>growth</strong> and <em>impact</em>.
+                </p>
+            </div>
+            <div>
+                <h3>EDUCATION</h3>
+                <hr>
+                <p><strong>Western Governors University</strong><br><em>Incomplete</em>, Computer Science</p>
+            </div>
+            <div>
+                <h3>PROFESSIONAL EXPERIENCE</h3>
+                <hr>
+                <p><strong>Kwik Trip</strong><br><em>Guest Service Coworker</em><br><strong>Sussex, WI, USA </strong> | <em>August 2021 - Present</em></p>
+                <p>
+                    <ul>
+                        <li>Deliver excellent customer service in a fast-pased environment.</li>
+                        <li>Train and mentor new team members, developing future team leaders.</li>
+                        <li>Delegate and coordinate team responsibilites to ensure efficient task completion.</li>
+                        <li>Analyze and reconcile shift transations, maintaining accuracy and attention to detail.</li>
+                        <li>Identify and implement process improvements to optimize workflow and customer satisfaction.</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <h3>SKILLS</h3>
+                <hr>
+                <div id="skills">
+                    <span style="color: darkgreen; 
+                    background: linear-gradient(45deg, lime, rgb(40, 179, 40));
+                    padding: 2px;
+                    border-radius: 2px;">Python</span>
+                    <span style="color: rgb(104, 104, 27);
+                    background: linear-gradient(45deg, yellow, yellow);
+                    padding: 2px;
+                    border-radius: 2px;">Git</span>
+                    <span style="color: rgb(171, 171, 214);
+                    background-color: rgb(64, 64, 199);
+                    padding: 2px;
+                    border-radius: 2px;">SQL</span>
+                    <span style="color: rgb(209, 176, 209);
+                    background-color: purple;
+                    padding: 2px;
+                    border-radius: 2px0;">Excel/Numbers/Sheets</span>
+                    <span style="color: rgb(146, 61, 61);
+                    background-color: red;
+                    padding: 2px;
+                    border-radius: 2px;">HTML/CSS/JavaScript</span>
+                </div>
+            </div>
+            <div>
+                <h4>INTERESTS</h4>
+                <hr>
+                <p>Computer architecture and personal coding projects, language-generation experiments, historical and religious studies, piano, and philosophy.</p>
+            </div>
+        </section>
+        <section>
+            <table>
+                <caption>Here is a table (will be deleted post-evaluation)</caption>
+                <tr>
+                    <th></th>
+                    <th scope="col">One!</th>
+                    <th scope="col">Two!</th>
+                    <th scope="col">Three!</th>
+                    <th scope="col">Four!</th>
+                </tr>
+                <tr>
+                    <th scope="row">Uno!</th>
+                    <td>Hello</td>
+                    <td>Hola</td>
+                    <td>Bonjour</td>
+                    <td>Ciao</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dos!</th>
+                    <td>Ola</td>
+                    <td>привет</td>
+                    <td>سلام</td>
+                    <td>שלום</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tres!</th>
+                    <td>नमस्ते</td>
+                    <td>你好</td>
+                    <td>こんにちは</td>
+                    <td>안녕하세요</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <div>
+            <p>Here is an ordered list (will be deleted post-evaluation):</p>
+            <ol style="list-style-type:lower-greek">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ol>
+            <hr>
+        </div>
+    </body>
+
+    <footer>
+        <div>
+            <a href="bonus.html">&copy Dean Kuhn 2025 (don't click...)</a><br>
+            <span id="currentDate"></span>
+        </div>
+
+        <script>
+            const today = new Date();
+            document.getElementById("currentDate").textContent = today.toLocaleDateString();
+            console.log("Here is the date!");
+        </script>
+    </footer>
+
+</html>

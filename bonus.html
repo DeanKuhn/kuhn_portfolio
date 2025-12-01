@@ -28,7 +28,21 @@
         <main>
             <h2>Congrats!</h2>
             <h3>You have made it to the secret page.</h3>
+            <p>Games coming soon, or at least until I get bored of JavaScript</p>
 
         </main>
+
+        <footer>
+            <div>
+                <a href="bonus.html">&copy Dean Kuhn 2025 
+                    <span style="text-decoration: underline;">(don't click...)</span></a><br>
+                <span id="dateBottom"></span>
+            </div>
+
+            <script>
+                const bottomDate = new Date();
+                document.getElementById("dateBottom").textContent = bottomDate.toLocaleDateString();
+            </script>
+        </footer>
     </body>
 </html>

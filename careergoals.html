@@ -25,14 +25,105 @@
             </div>
         </nav>
         
-        <section>
+        <div>
+            <h4><hr>
+                If this page is wider than 600 px it will result in a type: grid area.
+                Otherwise, all items are within a single column.
+            <hr></h4>
+        </div>
+        <main id="careerGrid">
+            <section>
+                <img    src="careerCat.jpg" alt="Funny Cat"
+                        sizes="(min-width: 600px) 25vw,
+                        (min-width: 400px) 50vw,
+                        100px"
+                        srcset="careerCat.jpg 200w
+                                careerCat2.jpg 400w,
+                                careerCat3.jpg 800w">
+            </section>
+            <section>
+                <form  id="careerForm" action="https://wp.zybooks.com/form-viewer.php" method="GET">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div>
+                        <label for="companyName">Company Name:</label>
+                        <input type="text" name="companyName" id="companyName">
+                    </div>
+                    <div>
+                        <label for="emailAddress">Email Address:</label>
+                        <input type="email" name="emailAddress" id="emailAddress">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="4" cols="30">Message goes here...</textarea>
+                    </div>
+                    <div>
+                        <p>Select the best time for me to contact you:</p>
+                        <input type="radio" name="contactTime" id="AM" value="AM">
+                        <label for="AM">AM</label>
+                        <input type="radio" name="contactTime" id="PM" value="PM">
+                        <label for="PM">PM</label>
+                        <input type="radio" name="contactTime" id="Anytime" value="Anytime">
+                        <label for="Anytime">Anytime</label>
+                    </div>
+                    <div>
+                        <p>What method of communication works best for you?</p>
+                        <select name="Communication Method">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                            <option value="show up at your house unannounced">Show up at your door unannounced</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+            </section>
 
-        </section>
+            <section>
+                <p>Here is an audio file!<br>
+                    <audio controls>
+                        <source src="audioSample.mp3" type="audio/mpeg">
+                    </audio>
+                </p>
+            </section>
+
+            <section>
+                <p>Finally, here is a video within an iframe element:</p>
+                <iframe width="300" height="200"
+                    src="https://www.youtube.com/embed/wDchsz8nmboautoplay=1&mute=1&rel=0&modestbranding=1"
+                    title="Youtube Sample Video"
+                    frameborder="5"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+        </main>
+
+        <footer>
+            <div>
+                <a href="bonus.html">&copy Dean Kuhn 2025 
+                    <span style="text-decoration: underline;">(don't click...)</span></a><br>
+                <span id="dateBottom"></span>
+            </div>
+
+            <script>
+                const bottomDate = new Date();
+                document.getElementById("dateBottom").textContent = bottomDate.toLocaleDateString();
+            </script>
+        </footer>
     </body>
 
-    <footer>
-        <div id="extra">
-            <a href="bonus.html">Don't click!</a>
-        </div>
-    </footer>
 </html>

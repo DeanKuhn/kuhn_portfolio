@@ -145,19 +145,21 @@
             </ol>
             <hr>
         </div>
+
+        <footer>
+            <div>
+                <a href="bonus.html">&copy Dean Kuhn 2025 (don't click...)</a><br>
+                <span id="currentDate"></span>
+            </div>
+
+            <script>
+                const today = new Date();
+                document.getElementById("currentDate").textContent = today.toLocaleDateString();
+                console.log("Here is the date!");
+            </script>
+        </footer>
     </body>
 
-    <footer>
-        <div>
-            <a href="bonus.html">&copy Dean Kuhn 2025 (don't click...)</a><br>
-            <span id="currentDate"></span>
-        </div>
 
-        <script>
-            const today = new Date();
-            document.getElementById("currentDate").textContent = today.toLocaleDateString();
-            console.log("Here is the date!");
-        </script>
-    </footer>
 
 </html>

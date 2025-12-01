@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="master.css">
-        <title>Submissions</title>
+        <title>Submission</title>
     </head>
 
 
 
     <body>
         <header>
-            <h1>Submissions</h1>
+            <h1>Submission</h1>
         </header>
         <nav>
             <div>
@@ -30,7 +30,7 @@
                 <h3>Results are in!</h3>
                 <p>Your first name was: <span id="firstNameOutput"></span>.</p>
                 <p>Your last name was: <span id="lastNameOutput"></span>.</p>
-                <p>You wanted me to hire you because:<br><span id="whyOutput"></span></p>
+                <p>You wanted me to hire you because:<hr><span id="whyOutput"></span><hr></p>
 
                 <script>
                     const params = new URLSearchParams(window.location.search);
@@ -44,6 +44,23 @@
                     document.getElementById('whyOutput').textContent = why || '(no why given)';
                 </script>
             </div>
+
+            <div>
+                <p>Back to <strong><a id="plug" href="index.html">Home</a></strong>.</p>
+            </div>
         </main>
+        
+        <footer>
+            <div>
+                <a href="bonus.html">&copy Dean Kuhn 2025 (don't click...)</a><br>
+                <span id="currentDate"></span>
+            </div>
+
+            <script>
+                const today = new Date();
+                document.getElementById("currentDate").textContent = today.toLocaleDateString();
+                console.log("Here is the date!");
+            </script>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="master.css">
+        <title>Cover Letter</title>
+    </head>
+
+
+
+    <body>
+        <header>
+            <h1>Cover Letter</h1>
+        </header>
+        <nav>
+            <div>
+                <a href="resume.html">Resume</a>
+            </div>
+            <div>
+                <a href="coverletter.html">Cover Letter</a>
+            </div>
+            <div>
+                <a href="careergoals.html">Career Goals</a>
+            </div>
+        </nav>
+        
+        <main>
+            <div>
+                <h3>Results are in!</h3>
+                <p>Your first name was: <span id="firstNameOutput"></span>.</p>
+                <p>Your last name was: <span id="lastNameOutput"></span>.</p>
+                <p>You wanted me to hire you because:<br><span id="whyOutput"></span></p>
+
+                <script>
+                    const params = new URLSearchParams(window.location.search);
+
+                    const first = params.get('firstNameOutput');
+                    const last = params.get('lastNameOutput');
+                    const why = params.get('whyOutput');
+
+                    document.getElementByID('firstNameOutput').textContent = first || '(no name given)';
+                    document.getElementByID('lastNameOutput').textContent = last || '(no last name give)';
+                    document.getElementByID('whyOutput').textContent = why || '(no why given)';
+                </script>
+            </div>
+        </main>
+    </body>
+</html>

@@ -37,6 +37,7 @@
 
                 <p>
                     <span id="dateTop"></span>
+                    <hr>
                 </p>
             </div>
                 <script>
@@ -44,6 +45,35 @@
                     document.getElementById("dateTop").textContent = today.toLocaleDateString();
                 </script>
                
+        </section>
+
+        <section>
+            <div>
+                <p><strong><em>Dear Hiring Agent,</em></strong></p>
+                <p>This is a reverse hire.  I am actually hiring you.
+                    Please fill out the form below and submit.
+                </p>
+                <div>
+                    <form action="submission.html" method="GET">
+                        <div>
+                            <label for="first">First Name:</label>
+                            <input type="text" name="first" id="first">
+                        </div>
+                        <div>
+                            <label for="last">Last Name:</label>
+                            <input type="text" name="last" id="last">
+                        </div>
+                        <div>
+                            <label for="why">Why do you want me to hire your?</label>
+                            <input type="text" name="why" id="why">
+                        </div>
+                        <div>
+                            <input type="submit">
+                        </div>
+                    </form>
+                    <hr>
+                </div>
+            </div>
         </section>
 
         <footer>

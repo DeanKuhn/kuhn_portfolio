@@ -86,3 +86,17 @@ footer {
     padding: 5px;
     margin: 2px;
 }
+
+form {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    background: linear-gradient(45deg, var(--background-color), var(--background-color2));
+    padding: 15px;
+    border-radius: 5px 3px;
+}
+
+form > div {
+    padding: 10px;
+}

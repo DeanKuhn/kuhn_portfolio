@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="master.css">
-        <title>Cover Letter</title>
+        <title>Submissions</title>
     </head>
 
 
 
     <body>
         <header>
-            <h1>Cover Letter</h1>
+            <h1>Submissions</h1>
         </header>
         <nav>
             <div>
@@ -35,13 +35,13 @@
                 <script>
                     const params = new URLSearchParams(window.location.search);
 
-                    const first = params.get('firstNameOutput');
-                    const last = params.get('lastNameOutput');
-                    const why = params.get('whyOutput');
+                    const first = params.get('first');
+                    const last = params.get('last');
+                    const why = params.get('why');
 
-                    document.getElementByID('firstNameOutput').textContent = first || '(no name given)';
-                    document.getElementByID('lastNameOutput').textContent = last || '(no last name give)';
-                    document.getElementByID('whyOutput').textContent = why || '(no why given)';
+                    document.getElementById('firstNameOutput').textContent = first || '(no name given)';
+                    document.getElementById('lastNameOutput').textContent = last || '(no last name given)';
+                    document.getElementById('whyOutput').textContent = why || '(no why given)';
                 </script>
             </div>
         </main>

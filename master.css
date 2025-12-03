@@ -8,6 +8,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+* {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 header {
     color: var(--main-color);
     background: linear-gradient(45deg, var(--background-color), var(--background-color2));

@@ -125,3 +125,10 @@ form > div {
     grid-template-columns: auto auto;
     }
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border: 2px dashed var(--background-color);
+}

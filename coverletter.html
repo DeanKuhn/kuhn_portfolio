@@ -13,68 +13,71 @@
         <header>
             <h1>Cover Letter</h1>
         </header>
-        <nav>
-            <div>
-                <a href="index.html">Resume</a>
-            </div>
-            <div>
-                <a href="coverletter.html">Cover Letter</a>
-            </div>
-            <div>
-                <a href="careergoals.html">Career Goals</a>
-            </div>
-        </nav>
-        
-        <section>
-            <div>
-                <p><strong>Dean Kuhn</strong><br>
-                <em>Sussex, WI, USA</em><br>
-                dakuhn1138@gmail.com<br>
-                (262) 894-9363<br>
-                <a id="plug" href="https://www.linkedin.com/in/dean-kuhn-565249380/">LinkedIn</a> | 
-                <a id="plug" href="https://github.com/DeanKuhn">GitHub</a>
-                </p>
 
-                <p>
-                    <span id="dateTop"></span>
-                    <hr>
-                </p>
-            </div>
-                <script>
-                    const today = new Date();
-                    document.getElementById("dateTop").textContent = today.toLocaleDateString();
-                </script>
-               
-        </section>
-
-        <section>
-            <div>
-                <p><strong><em>Dear Hiring Agent,</em></strong></p>
-                <p>This is a reverse hire.  I am actually hiring you.
-                    Please fill out the form below and submit.
-                </p>
+        <main>
+            <nav>
                 <div>
-                    <form id="coverletterForm" action="submissions.html" method="GET">
-                        <div>
-                            <label for="first">First Name:</label>
-                            <input type="text" name="first" id="first">
-                        </div>
-                        <div>
-                            <label for="last">Last Name:</label>
-                            <input type="text" name="last" id="last">
-                        </div>
-                        <div>
-                            <label for="why">Why do you want me to hire your?</label>
-                            <input type="text" name="why" id="why">
-                        </div>
-                        <div>
-                            <input type="submit">
-                        </div>
-                    </form>
-                    <hr>
+                    <a href="index.html">Resume</a>
                 </div>
-            </div>
-        </section>
+                <div>
+                    <a href="coverletter.html">Cover Letter</a>
+                </div>
+                <div>
+                    <a href="careergoals.html">Career Goals</a>
+                </div>
+            </nav>
+            
+            <section>
+                <div>
+                    <p><strong>Dean Kuhn</strong><br>
+                    <em>Sussex, WI, USA</em><br>
+                    dakuhn1138@gmail.com<br>
+                    (262) 894-9363<br>
+                    <a id="plug" href="https://www.linkedin.com/in/dean-kuhn-565249380/">LinkedIn</a> | 
+                    <a id="plug" href="https://github.com/DeanKuhn">GitHub</a>
+                    </p>
+
+                    <p>
+                        <span id="dateTop"></span>
+                        <hr>
+                    </p>
+                </div>
+                    <script>
+                        const today = new Date();
+                        document.getElementById("dateTop").textContent = today.toLocaleDateString();
+                    </script>
+                
+            </section>
+
+            <section>
+                <article>
+                    <p><strong><em>Dear Hiring Agent,</em></strong></p>
+                    <p>This is a <mark>reverse hire</mark>.  I am actually hiring you.
+                        Please fill out the form below and submit.
+                    </p>
+                    <div>
+                        <form id="coverletterForm" action="submissions.html" method="GET">
+                            <div>
+                                <label for="first">First Name:</label>
+                                <input type="text" name="first" id="first">
+                            </div>
+                            <div>
+                                <label for="last">Last Name:</label>
+                                <input type="text" name="last" id="last">
+                            </div>
+                            <div>
+                                <label for="why">Why do you want me to hire your?</label>
+                                <input type="text" name="why" id="why">
+                            </div>
+                            <div>
+                                <input type="submit">
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </article>
+            </section>
+        </main>
 
         <footer>
             <div>

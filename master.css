@@ -131,3 +131,7 @@ form > div {
     height: auto;
     border: 2px dashed var(--background-color);
 }
+
+li {
+    list-style-type: square;
+}
